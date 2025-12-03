@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Tarefas</title>
+    <link rel="stylesheet" href="tarefas.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Minhas tarefas</h1>
+        <div class="header-buttons">
+            <a href="dashboard.html" class="btn-nav btn-dashboard">Dashboard</a>
+            <a href="loginECadastro.html" class="btn-nav btn-sair">Sair</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="add-task">
+            <input type="text" placeholder="Adicionar uma nova tarefa" id="new-task-input">
+            <button class="btn-add">Adicionar</button>
+        </div>
+        
+        <div class="task-list">
+            <div class="task-item">
+                <input type="checkbox" id="task1">
+                <label for="task1">Preparar a apresentação do projeto</label>
+                <button class="btn-delete">×</button>
+            </div>
+            
+            <div class="task-item">
+                <input type="checkbox" id="task2">
+                <label for="task2">Revisar código do sistema</label>
+                <button class="btn-delete">×</button>
+            </div>
+        </div>
+        
+        <div class="task-summary">
+            <span>3 Tarefas ativas</span>
+            <span>1 Concluída</span>
+        </div>
+    </div>
+</body>
+</html>

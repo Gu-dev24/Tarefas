@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro</title>
+    <link rel="stylesheet" href="loginECadastro.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <input type="radio" name="tab" id="login-tab" checked>
+            <input type="radio" name="tab" id="cadastro-tab">
+            
+            <div class="tab-labels">
+                <label for="login-tab" class="tab-label">Login</label>
+                <label for="cadastro-tab" class="tab-label">Cadastro</label>
+            </div>
+            
+            <div class="tab-content">
+                <!-- Login Form -->
+                <div class="form-container login-form">
+                    <h2>Bem-vindo de volta!</h2>
+                    
+                    <form action="tarefas.html" method="get">
+                            <label for="login-email">E-mail</label>
+                            <input type="email" id="login-email" placeholder="seu@email.com">
+                        
+                            <label for="login-senha">Senha</label>
+                            <input type="password" id="login-senha" placeholder="••••••••">
+                      
+                        
+                        <button type="submit" class="btn-submit">Entrar</button>
+                        
+                        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                    </form>
+                </div>
+                
+                <!-- Cadastro Form -->
+                <div class="form-container cadastro-form">
+                    <h2>Crie sua conta!</h2>
+                    
+                    <form action="tarefas.html" method="get">
+                        <div class="form-group">
+                            <label for="cadastro-nome">Nome Completo</label>
+                            <input type="text" id="cadastro-nome" placeholder="João Silva">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cadastro-email">E-mail</label>
+                            <input type="email" id="cadastro-email" placeholder="seu@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cadastro-senha">Senha</label>
+                            <input type="password" id="cadastro-senha" placeholder="••••••••">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cadastro-confirma">Confirme sua senha</label>
+                            <input type="password" id="cadastro-confirma" placeholder="••••••••">
+                        </div>
+                        
+                        <button type="submit" class="btn-submit">Entrar</button>
+                        
+                        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
